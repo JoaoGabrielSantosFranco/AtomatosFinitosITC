@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simulador de AFND</title>
+</head>
+<body>
+  <h1>Simulador de AFND</h1>
+
+  <div id="input-form">
+    <label for="num-inputs">Quantas cadeias de entrada você deseja testar?</label>
+    <input type="number" id="num-inputs">
+    <button onclick="solicitarCadeias()">Enviar</button>
+  </div>
+
+  <div id="inputs-container" style="display: none;">
+    <h2>Cadeias de Entrada</h2>
+    <ul id="input-list"></ul>
+    <button onclick="executarAFND()">Executar</button>
+  </div>
+
+  <div id="results-container" style="display: none;">
+    <h2>Resultados</h2>
+    <ul id="result-list"></ul>
+  </div>
+
+  <script src="afnd.js"></script>
+</body>
+</html>
